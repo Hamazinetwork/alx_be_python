@@ -1,3 +1,3 @@
 hours = 2
-seconds = 3600
+seconds = 60 * 60
 print(hours * seconds)
