@@ -16,12 +16,8 @@ def calculate_future_date():
     except ValueError:
         print("Invalid input. Please enter an integer value.")
 
-def main():
-    print("\n--- Part 1: Display Current Date and Time ---")
-    display_current_datetime()
 
-    print("\n--- Part 2: Calculate a Future Date ---")
-    calculate_future_date()
 
 if __name__ == "__main__":
-    main()
+    display_current_datetime()
+    calculate_future_date()
