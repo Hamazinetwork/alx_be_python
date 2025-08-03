@@ -1,3 +1,4 @@
+# robust_division_calculator.py
 
 def safe_divide(numerator, denominator):
     """
@@ -5,15 +6,15 @@ def safe_divide(numerator, denominator):
     Returns a string with the result or an appropriate error message.
     """
     try:
-        # Convert inputs to float (can raise ValueError if invalid)
+        # Attempt to convert to float (could raise ValueError)
         num = float(numerator)
         den = float(denominator)
 
-        # Perform division (can raise ZeroDivisionError)
+        # Attempt division (could raise ZeroDivisionError)
         result = num / den
-        return f"The result of dividing {num} by {den} is {result:.2f}"
+        return f"The result of the division is {result:.1f}"
 
     except ValueError:
-        return "Error: Both inputs must be numeric values."
+        return "Error: Please enter numeric values only."
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
